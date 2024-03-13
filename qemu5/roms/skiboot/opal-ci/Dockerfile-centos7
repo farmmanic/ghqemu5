@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:centos8
 RUN yum -y update && yum clean all
 RUN yum -y install wget curl xterm gcc git xz make diffutils findutils expect valgrind valgrind-devel ccache dtc openssl-devel openssl mbedtls-devel
 RUN mkdir /opt/cross
